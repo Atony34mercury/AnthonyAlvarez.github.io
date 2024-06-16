@@ -6,8 +6,9 @@ body, html{
     width: 100%;
     height: 100%;
     font-family: 'VT323';
-    color: lightgreen;
+    color: #90ee90;
     background-color: black;
+    background-image: url('./img/Background-matrix.gif');
 }
 
 p, h1{
@@ -15,13 +16,35 @@ p, h1{
 }
 
 .nav-bar{
-    background-color: black;
+    background-color: #000000;
     border: 2px solid lightgreen;
     position: fixed;
     text-align: center;
     width: 20vw;
     height: 100%;
 }
+
+
+.nav-link.active {
+    color: white;
+    border: 1px solid;
+    border-color: lightgreen;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link {
+    color: lightgreen;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1.3vw;
+}
+
 
 .content{
     text-align: center;
@@ -35,6 +58,7 @@ p, h1{
     align-items: center;
     justify-content: center;
     border: 2px solid lightgreen;
+    background-color: #000000b0;
 }
 
 .main-title{
@@ -44,6 +68,21 @@ p, h1{
 .about{
     height: 100%;
     text-align: left;
+    background-color: #000000;
+}
+
+.about h2{
+    text-decoration: underline;
+}
+
+.about p{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.about section{
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .title-page{
@@ -55,6 +94,109 @@ p, h1{
 .font-verdana{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.circle{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(144,238,144,1) 100%);
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    animation: un-shine 0.5s;
+    transform: scale(1);
+}
+.circle:hover{
+    animation: shine 0.5s;
+    transform: scale(1.2);
+}
+
+.center-items{
+    display: grid; 
+    place-items: center;
+}
+
+
+@keyframes shine {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes un-shine {
+    0% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume{
+    text-align: left;
+    background-color: #000000;
+}
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* color: #050d18; */
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid lightgreen;
+    position: relative;
+  }
+  
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: lightgreen;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 16px;
+    background: #141414;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #1f5297;
+  }
 
 
 
