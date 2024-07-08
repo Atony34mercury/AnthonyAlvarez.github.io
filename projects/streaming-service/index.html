@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Carousel da Netflix</title>
+
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="contain">
+
+
+  <div class="slider">
+      <h3>Animes</h3>
+      <span onmouseover="scrollEsquerda()" onmouseout="clearScroll()" class="handle handlePrev active">
+        <i class="fa fa-caret-left" aria-hidden="true"></i>
+      </span>
+
+      <div id="scroller" class="row">
+        <div class="row__inner">
+
+          <div class="gui-card">
+            <div class="gui-card__media">
+              <img class="gui-card__img" src="Another_series_cover.jpg" alt=""  />
+            </div>
+            <div id="clickableDiv" class="gui-card__details">
+              <div class="gui-card__title">
+                Another
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <span onmouseover="scrollDireita()" onmouseout="clearScroll()"  class="handle handleNext active">
+        <i class="fa fa-caret-right" aria-hidden="true"></i>
+      </span>
+  </div>
+
+  <div class="slider">
+    <h3>Peliculas</h3>
+    <span onmouseover="scrollEsquerda()" onmouseout="clearScroll()" class="handle handlePrev active">
+      <i class="fa fa-caret-left" aria-hidden="true"></i>
+    </span>
+
+    <div id="scroller" class="row">
+      <div class="row__inner">
+
+        <div class="gui-card">
+          <div class="gui-card__media">
+            <img class="gui-card__img" src="Another_series_cover.jpg" alt=""  />
+          </div>
+          <div id="clickableDiv" class="gui-card__details">
+            <div class="gui-card__title">
+              Another
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <span onmouseover="scrollDireita()" onmouseout="clearScroll()"  class="handle handleNext active">
+      <i class="fa fa-caret-right" aria-hidden="true"></i>
+    </span>
+</div>
+
+<div class="slider">
+  <h3>Series</h3>
+  <span onmouseover="scrollEsquerda()" onmouseout="clearScroll()" class="handle handlePrev active">
+    <i class="fa fa-caret-left" aria-hidden="true"></i>
+  </span>
+
+  <div id="scroller" class="row">
+    <div class="row__inner">
+
+      <div class="gui-card">
+        <div class="gui-card__media">
+          <img class="gui-card__img" src="Another_series_cover.jpg" alt=""  />
+        </div>
+        <div id="clickableDiv" class="gui-card__details">
+          <div class="gui-card__title">
+            Another
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <span onmouseover="scrollDireita()" onmouseout="clearScroll()"  class="handle handleNext active">
+    <i class="fa fa-caret-right" aria-hidden="true"></i>
+  </span>
+</div>
+
+</div>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
