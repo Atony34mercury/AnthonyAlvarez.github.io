@@ -246,6 +246,13 @@ p, h1{
 
 /* Hide .nav-bar for screens between 769px and 992px (e.g., tablets) */
 @media screen and (min-width: 769px) and (max-width: 992px) {
+    .nav-bar {
+        display: none;
+    }
+    .content {
+        margin-left: 0px;
+        width: 100%;
+    }
 
 }
 
