@@ -87,8 +87,16 @@ p, h1{
 
 .title-page{
     text-align: left;
-    font-size: xx-large;
+    /* font-size: xx-large; */
     /* font-size: 20px; */
+}
+
+.title-page h1{
+    font-size: 5rem;
+}
+
+.title-page h2{
+    font-size: 3rem;
 }
 
 .font-verdana{
@@ -112,6 +120,7 @@ p, h1{
 .center-items{
     display: grid; 
     place-items: center;
+    align-content: start;
 }
 
 
@@ -197,6 +206,58 @@ p, h1{
     background: #fff;
     border: 2px solid #1f5297;
   }
+
+
+/* Hide .nav-bar for screens smaller than 576px (e.g., small mobile devices) */
+@media screen and (max-width: 576px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .title-page h1{
+        font-size: 3rem;
+    }
+    
+    .title-page h2{
+        font-size: 2rem;
+    }
+
+    .circle {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Hide .nav-bar for screens between 577px and 768px (e.g., medium-sized mobile devices) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .nav-bar {
+        display: none;
+    }
+    .content {
+        margin-left: 0px;
+        width: 100%;
+    }
+}
+
+/* Hide .nav-bar for screens between 769px and 992px (e.g., tablets) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+}
+
+/* Hide .nav-bar for screens between 993px and 1200px (e.g., small laptops) */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+}
+
+/* Hide .nav-bar for screens larger than 1201px (e.g., large desktops) */
+@media screen and (min-width: 1201px) {
+
+}
 
 
 
